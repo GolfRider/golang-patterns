@@ -30,10 +30,10 @@
    - https://github.com/GolfRider/golang-patterns/blob/main/9_httpserver.go
    
 10. **TopK (Heaps):**
-   - https://github.com/GolfRider/golang-patterns/blob/main/10_topK.go
+    - https://github.com/GolfRider/golang-patterns/blob/main/10_topK.go
 
 11. **LRU Cache:**
-   - https://github.com/GolfRider/golang-patterns/blob/main/11_lru_cache.go
+    - https://github.com/GolfRider/golang-patterns/blob/main/11_lru_cache.go
 
 12. **Single Flight:**
     - https://github.com/GolfRider/golang-patterns/blob/main/12_single_flight.go
