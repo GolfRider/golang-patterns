@@ -41,6 +41,6 @@
 13. **Error (Wait) Group:**
     - https://github.com/GolfRider/golang-patterns/blob/main/13_error_group.go
     
-14. **Stream Batch Processor:**
-    - TODO
+14. **TopK (Heap/Priority-Queue):**
+    - https://github.com/GolfRider/golang-patterns/blob/main/14_topK.go
  
