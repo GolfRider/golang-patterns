@@ -1,4 +1,4 @@
-# golang-patterns
+# Golang Patterns
 
 **Golang Real World Patterns**
 
