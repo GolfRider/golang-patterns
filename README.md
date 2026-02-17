@@ -29,8 +29,8 @@
 9. **Http Server & Middleware:**
    - https://github.com/GolfRider/golang-patterns/blob/main/9_httpserver.go
    
-10. **TopK (Heaps):**
-    - https://github.com/GolfRider/golang-patterns/blob/main/10_topK.go
+10. **Sync Pool/Sync Map:**
+    - https://github.com/GolfRider/golang-patterns/blob/main/10_sync_pool_sync_map.go
 
 11. **LRU Cache:**
     - https://github.com/GolfRider/golang-patterns/blob/main/11_lru_cache.go
