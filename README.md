@@ -43,4 +43,8 @@
     
 14. **TopK (Heap/Priority-Queue):**
     - https://github.com/GolfRider/golang-patterns/blob/main/14_topK.go
+
+15. **Sliding Window TopK:**
+    - https://github.com/GolfRider/golang-patterns/blob/main/15_sliding_window_topK.go
+
  
