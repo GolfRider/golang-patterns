@@ -29,15 +29,18 @@
 9. **Http Server & Middleware:**
    - https://github.com/GolfRider/golang-patterns/blob/main/9_httpserver.go
    
-10. **TopK (Heaps):** 
+10. **TopK (Heaps):**
    - https://github.com/GolfRider/golang-patterns/blob/main/10_topK.go
 
 11. **LRU Cache:**
    - https://github.com/GolfRider/golang-patterns/blob/main/11_lru_cache.go
 
 12. **Single Flight:**
-   - https://github.com/GolfRider/golang-patterns/blob/main/12_single_flight.go
+    - https://github.com/GolfRider/golang-patterns/blob/main/12_single_flight.go
 
 13. **Error (Wait) Group:**
-   - https://github.com/GolfRider/golang-patterns/blob/main/13_error_group.go 
+    - https://github.com/GolfRider/golang-patterns/blob/main/13_error_group.go
+    
+14. **Stream Batch Processor:**
+    - TODO
  
