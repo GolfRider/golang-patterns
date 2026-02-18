@@ -23,6 +23,7 @@ func main() {
 	checkSyncMap()
 	checkTopK()
 	checkSlidingWindowTopK()
+	checkProducerConsumerBackpressure()
 }
 
 func main1() {
