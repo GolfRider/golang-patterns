@@ -2,8 +2,8 @@
 
 **Golang Real World Patterns**
 
-1. **Error Handling**: 
-   - https://github.com/GolfRider/golang-patterns/blob/main/1_error_handling.go
+1. **Error & Context Handling**: 
+   - https://github.com/GolfRider/golang-patterns/blob/main/1_error_context_handling.go
    
 2. **Worker Pool:** 
    - https://github.com/GolfRider/golang-patterns/blob/main/2_worker_pool.go
