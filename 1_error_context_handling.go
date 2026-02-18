@@ -58,3 +58,8 @@ func checkContext() {
 
 	wg.Wait()
 }
+
+func checkContextAndError() {
+	checkError()
+	checkContext()
+}

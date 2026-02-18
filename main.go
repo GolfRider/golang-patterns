@@ -8,18 +8,21 @@ import (
 )
 
 func main() {
-	//checkError()
-	//checkWorkerPool()
-	//checkPipeline()
-	//checkFanInFanOut()
-	//gracefulShutdown()
-	//checkRetry()
-	//checkCircuitBreaker()
-	//startHttpServer()
-	//checkSingleFlight()
+	checkContextAndError()
+	checkWorkerPool()
+	checkPipeline()
+	checkFanInFanOut()
+	checkGracefulShutdown()
+	checkRetry()
+	checkCircuitBreaker()
+	startHttpServer()
+	checkSingleFlight()
 	checkErrorGroupWithParallelWork()
-	//checkTopK()
-	//checkCache()
+	checkSyncPool()
+	checkCache()
+	checkSyncMap()
+	checkTopK()
+	checkSlidingWindowTopK()
 }
 
 func main1() {

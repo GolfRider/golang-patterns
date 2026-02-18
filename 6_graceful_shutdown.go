@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-func gracefulShutdown() {
+func checkGracefulShutdown() {
 	ctx, cancel := signal.NotifyContext(context.Background(), syscall.SIGTERM, syscall.SIGINT)
 	defer cancel()
 
