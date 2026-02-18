@@ -47,4 +47,7 @@
 15. **Sliding Window TopK:**
     - https://github.com/GolfRider/golang-patterns/blob/main/15_sliding_window_topK.go
 
+16. **Producer/Consumer With Backpressure:**
+    - https://github.com/GolfRider/golang-patterns/blob/main/16_producer_consumer_backpressure.go
+
  
