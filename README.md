@@ -52,5 +52,8 @@
 
 17. **Streaming IO - Reader/Writer Gzipped/Bufio:**
     - https://github.com/GolfRider/golang-patterns/blob/main/17_streaming_io.go
- 
+
+18. **Batching & Flushing:**
+    - https://github.com/GolfRider/golang-patterns/blob/main/18_batch_flush.go
+
 
