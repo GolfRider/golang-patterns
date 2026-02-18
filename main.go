@@ -24,6 +24,7 @@ func main() {
 	checkTopK()
 	checkSlidingWindowTopK()
 	checkProducerConsumerBackpressure()
+	checkLogErrors()
 }
 
 func main1() {

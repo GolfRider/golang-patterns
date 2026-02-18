@@ -7,6 +7,7 @@ import (
 	"io"
 	"log"
 	"os"
+	"strings"
 )
 
 func readGzip(path string) {
@@ -95,4 +96,30 @@ func pipeData(srcPath, dstPath string) {
 	}
 }
 
-// add tests
+// FindLogErrors doesn't care if the data comes from a file or a string.
+// It just needs an io.Reader.
+func findLogErrors(r io.Reader) {
+	scanner := bufio.NewScanner(r)
+	for scanner.Scan() {
+		line := scanner.Text()
+		if strings.Contains(line, "ERROR") {
+			fmt.Println("Found:", line)
+		}
+	}
+}
+
+func checkLogErrors() {
+	// Instead of opening a real file, we create a "virtual" file from a string
+	mockFileData := `INFO: starting up
+ERROR: connection failed
+INFO: retrying...
+ERROR: auth timeout`
+
+	// This is the "Adapter"
+	reader := strings.NewReader(mockFileData)
+
+	// Now we pass our string-reader into the function
+	findLogErrors(reader)
+}
+
+// TODO: add more tests
