@@ -25,6 +25,7 @@ func main() {
 	checkSlidingWindowTopK()
 	checkProducerConsumerBackpressure()
 	checkLogErrors()
+	checkBatchFlush()
 }
 
 func main1() {
