@@ -50,4 +50,7 @@
 16. **Producer/Consumer With Backpressure:**
     - https://github.com/GolfRider/golang-patterns/blob/main/16_producer_consumer_backpressure.go
 
+17. **Streaming IO - Reader/Writer Gzipped/Bufio:**
+    - https://github.com/GolfRider/golang-patterns/blob/main/17_streaming_io.go
  
+
