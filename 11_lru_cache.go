@@ -11,14 +11,14 @@ type entry struct {
 
 type cache struct {
 	mm       map[string]*list.Element
-	ll       *list.List
+	orderLL  *list.List
 	capacity int
 }
 
 func NewCache(capacity int) *cache {
 	return &cache{
 		mm:       make(map[string]*list.Element),
-		ll:       list.New(),
+		orderLL:  list.New(),
 		capacity: capacity,
 	}
 }
@@ -26,23 +26,23 @@ func NewCache(capacity int) *cache {
 func (c *cache) Add(key, value string) {
 	if val, ok := c.mm[key]; ok {
 		val.Value.(*entry).value = value
-		c.ll.MoveToFront(val)
+		c.orderLL.MoveToFront(val)
 		return
 	}
 
-	c.mm[key] = c.ll.PushFront(&entry{key, value})
+	c.mm[key] = c.orderLL.PushFront(&entry{key, value})
 
 	if len(c.mm) > c.capacity { // greater than capacity?
-		if lru := c.ll.Back(); lru != nil {
+		if lru := c.orderLL.Back(); lru != nil {
 			delete(c.mm, lru.Value.(*entry).key)
-			c.ll.Remove(lru)
+			c.orderLL.Remove(lru)
 		}
 	}
 }
 
 func (c *cache) Get(key string) string {
 	if val, ok := c.mm[key]; ok {
-		c.ll.MoveToFront(val)
+		c.orderLL.MoveToFront(val)
 		return val.Value.(*entry).value
 	}
 	return ""
