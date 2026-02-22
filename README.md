@@ -2,7 +2,7 @@
 
 **Golang Real World Patterns**
 
-Note: This repository began as a concurrency-focused collection and is not intended to be exhaustive. 
+**Note**: This repository began as a concurrency-focused collection and is not intended to be exhaustive. 
       It captures a subset of patterns I’ve encountered so far. Additional patterns exist across many domains, including distributed systems, security, networking, and systems programming.
       **Keep learning, keep building !.**
 
