@@ -60,6 +60,6 @@
 18. **Batching & Flushing:**
     - https://github.com/GolfRider/golang-patterns/blob/main/18_batch_flush.go
 
-19. **Bounded LRU Rate-Limiter (Fixed Window):**
+19. **Bounded Rate-Limiter (LRU + TTL + Fixed Window):**
     - https://github.com/GolfRider/golang-patterns/blob/main/19_bounded_lru_rate_limiter_fixed_window.go
 
