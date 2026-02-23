@@ -26,6 +26,7 @@ func main() {
 	checkProducerConsumerBackpressure()
 	checkLogErrors()
 	checkBatchFlush()
+	checkBoundedRateLimiter() // bounded rate-limiter (fixed-window) [lru-cache + ttl]
 }
 
 func main1() {
