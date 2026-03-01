@@ -56,13 +56,19 @@ func hello(w http.ResponseWriter, r *http.Request) {
 
 func loggingMiddlware(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		// 1. Logic BEFORE the core
+		fmt.Printf("Started %s %s\n", r.Method, r.URL.Path)
+
 		defer func() {
 			if err := recover(); err != nil {
 				log.Printf("panic recovered: %v", err)
 				http.Error(w, "internal error", http.StatusInternalServerError)
 			}
 		}()
+		// 2. Call the "Next" layer (could be another middleware or the core)
 		next.ServeHTTP(w, r)
+
+		// 3. Logic AFTER the core
 		log.Printf("%s %s %s", r.RemoteAddr, r.Method, r.URL)
 	})
 }
