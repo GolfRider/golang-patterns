@@ -21,7 +21,7 @@ func startHttpServer() {
 
 	server := http.Server{
 		Addr:         ":8888",
-		Handler:      loggingMiddlware(mux),
+		Handler:      loggingMiddlware(mux), // Every request now hits LoggingMiddleware FIRST, then the mux.
 		ReadTimeout:  5 * time.Second,
 		WriteTimeout: 5 * time.Second,
 	}
@@ -54,6 +54,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+// Every request now hits LoggingMiddleware FIRST, then the mux.
 func loggingMiddlware(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		// 1. Logic BEFORE the core
