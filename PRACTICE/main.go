@@ -15,9 +15,11 @@ func main() {
 	problem13()
 	problem15()
 	problem16()
+	problem17()
 	practice18()
 	problem19()
 	problem21()
+	problem22()
 	problem23()
 	practice26()
 }

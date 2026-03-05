@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func checkTopK() {
+func problem22() {
 
 	numbers := []int{1, 1, 1, 2, 2, 3, 4, 5, 5, 5, 5}
 	freqMap := make(map[int]int)
